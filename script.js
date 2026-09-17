@@ -37,28 +37,6 @@
   }
 
   function initSmoothScroll() {
-    if (!window.Lenis || state.reducedMotion) return;
-
-    state.lenis = new Lenis({
-      duration: 1.1,
-      smoothWheel: true,
-      syncTouch: true,
-      wheelMultiplier: 0.9,
-      touchMultiplier: 1.05
-    });
-
-    const raf = (time) => {
-      state.lenis.raf(time);
-      requestAnimationFrame(raf);
-    };
-
-    requestAnimationFrame(raf);
-
-    if (window.gsap && window.ScrollTrigger) {
-      gsap.ticker.lagSmoothing(1000, 16);
-      gsap.ticker.add((time) => state.lenis?.raf(time * 1000));
-    }
-
     $$('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", (event) => {
         const id = anchor.getAttribute("href");
@@ -67,7 +45,13 @@
         if (!target) return;
         event.preventDefault();
         closeMenu();
-        state.lenis?.scrollTo(target, { offset: -20, duration: 1.15 });
+        const headerOffset = 80;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
       });
     });
   }
@@ -541,13 +525,13 @@
       if (window.ScrollTrigger) ScrollTrigger.refresh();
     };
 
-    if (window.gsap && window.ScrollTrigger && window.Lenis) {
+    if (window.gsap && window.ScrollTrigger) {
       boot();
       return;
     }
 
     const wait = window.setInterval(() => {
-      if (window.gsap && window.ScrollTrigger && window.Lenis) {
+      if (window.gsap && window.ScrollTrigger) {
         clearInterval(wait);
         boot();
       }
