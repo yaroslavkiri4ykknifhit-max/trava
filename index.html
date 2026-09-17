@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102115">
+  <meta name="description" content="Чистый участок — расчистка участков, спил деревьев, демонтаж, вывоз мусора и подготовка территории в Витебске и области.">
+  <title>Чистый участок — участок снова дышит</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="site-loader" aria-hidden="true">
+    <div class="loader-mark"><span></span><span></span><span></span></div>
+  </div>
+
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a href="#top" class="brand" aria-label="Чистый участок">
+      <span class="brand-symbol" aria-hidden="true">
+        <span class="leaf leaf-a"></span>
+        <span class="leaf leaf-b"></span>
+        <span class="leaf leaf-c"></span>
+        <span class="trunk"></span>
+      </span>
+      <span class="brand-copy">
+        <strong>ЧИСТЫЙ УЧАСТОК</strong>
+        <small>Ваше территория — наша забота</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#process">Как мы работаем</a>
+      <a href="#projects">Проекты</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+375291234567">
+        <span class="phone-icon">↗</span>
+        <span><b>+375 (29) 123-45-67</b><small>Ежедневно с 8:00 до 20:00</small></span>
+      </a>
+      <a class="btn btn-dark btn-compact magnetic" href="#contacts">Заказать звонок</a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" data-mobile-menu aria-hidden="true">
+    <div class="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel">
+      <div class="mobile-menu-top">
+        <span>НАВИГАЦИЯ</span>
+        <button type="button" data-menu-close>Закрыть</button>
+      </div>
+      <nav class="mobile-nav" aria-label="Мобильная навигация">
+        <a href="#services" data-menu-link><span>01</span>Услуги</a>
+        <a href="#process" data-menu-link><span>02</span>Как мы работаем</a>
+        <a href="#projects" data-menu-link><span>03</span>Проекты</a>
+        <a href="#reviews" data-menu-link><span>04</span>Отзывы</a>
+        <a href="#contacts" data-menu-link><span>05</span>Контакты</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <span>ВИТЕБСК И ОБЛАСТЬ</span>
+        <a href="tel:+375291234567">+375 (29) 123-45-67</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero section-dark" data-hero>
+      <div class="hero-bg" data-parallax="bg"></div>
+      <div class="hero-vignette"></div>
+
+      <div class="hero-copy container" data-parallax="copy">
+        <div class="hero-eyebrow reveal-up">
+          <span class="eyebrow-dot"></span>
+          ВИТЕБСК И ВИТЕБСКАЯ ОБЛАСТЬ
+        </div>
+        <h1 class="hero-title">
+          <span class="line reveal-up">Участок</span>
+          <span class="line reveal-up">снова <em>дышит</em></span>
+        </h1>
+        <p class="hero-description reveal-up">Расчистка участков, спил деревьев, демонтаж, вывоз мусора. Подготовим территорию к строительству, отдыху или продаже.</p>
+
+        <div class="hero-cta-row reveal-up">
+          <a class="btn btn-lime magnetic" href="#contacts">Получить бесплатную консультацию <span>→</span></a>
+          <span class="cta-note">Ответим в течение<br>15 минут</span>
+        </div>
+
+        <div class="hero-proof reveal-up">
+          <div class="avatar-stack" aria-hidden="true">
+            <span>А</span><span>С</span><span>И</span><span>М</span>
+          </div>
+          <div><b>Более 300</b> довольных клиентов<br>в Витебске и области</div>
+        </div>
+
+        <div class="hero-features reveal-up">
+          <div><span>⌂</span><small>Выезд<br>по области</small></div>
+          <div><span>✣</span><small>Свой инструмент<br>и техника</small></div>
+          <div><span>△</span><small>Любая<br>сложность</small></div>
+          <div><span>♢</span><small>Чисто, быстро<br>и аккуратно</small></div>
+        </div>
+      </div>
+
+      <div class="hero-worker" data-parallax="fg" aria-hidden="true">
+        <img class="worker-img" src="./assets/images/hero_worker_cutout.png" alt="Worker">
+      </div>
+
+      <div class="hero-phrase">Больше. <em>Чем</em><br>просто уборка</div>
+      <div class="hero-bottom-sweep" aria-hidden="true"></div>
+      <canvas class="particles" data-particles></canvas>
+    </section>
+
+    <section class="services section-green torn-top" id="services">
+      <div class="container services-layout">
+        <div class="services-intro reveal-up">
+          <span class="section-kicker">НАШИ УСЛУГИ</span>
+          <h2>Делаем участок <em>лучше</em></h2>
+          <p>Комплексный подход — от спила деревьев до вывоза мусора. Вы выбираете задачу, мы берём на себя всё остальное.</p>
+          <a href="#contacts" class="round-link magnetic" aria-label="Все услуги">→</a>
+          <span class="round-link-label">Все услуги</span>
+        </div>
+
+        <div class="services-grid" data-services-grid>
+          <article class="service-card service-card-large reveal-up">
+            <div class="service-media" style="--img:url('./assets/images/service_clearing.jpg')"></div>
+            <div class="service-card-body"><div><b>Расчистка участков</b><small>От деревьев и кустарников</small></div><span>↗</span></div>
+          </article>
+          <article class="service-card reveal-up">
+            <div class="service-media" style="--img:url('./assets/images/service_tree_cutting.jpg')"></div>
+            <div class="service-card-body"><div><b>Спил деревьев</b><small>Любой сложности</small></div><span>↗</span></div>
+          </article>
+          <article class="service-card reveal-up">
+            <div class="service-media" style="--img:url('./assets/images/service_demolishing.jpg')"></div>
+            <div class="service-card-body"><div><b>Демонтаж построек</b><small>Дома, сараи, заборы</small></div><span>↗</span></div>
+          </article>
+          <article class="service-card reveal-up">
+            <div class="service-media" style="--img:url('./assets/images/service_debris.jpg')"></div>
+            <div class="service-card-body"><div><b>Вывоз мусора</b><small>Ветки, плиты, стройматериалы</small></div><span>↗</span></div>
+          </article>
+          <article class="service-card reveal-up">
+            <div class="service-media" style="--img:url('./assets/images/service_mowing.jpg')"></div>
+            <div class="service-card-body"><div><b>Покос травы и бурьяна</b><small>Большие площади</small></div><span>↗</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="before-after section-cream" id="projects">
+      <div class="container before-after-inner">
+        <div class="before-copy reveal-up">
+          <span class="section-kicker dark">РЕЗУЛЬТАТ ГОВОРИТ САМ ЗА СЕБЯ</span>
+          <h2>До / <em>После</em></h2>
+          <p>Заброшенные участки превращаем в чистые, ухоженные территории.</p>
+          <div class="slider-controls" aria-label="Управление слайдером">
+            <button type="button" data-slider-prev aria-label="Предыдущий проект">←</button>
+            <button type="button" data-slider-next aria-label="Следующий проект">→</button>
+            <span data-slider-count>1 / 6</span>
+          </div>
+        </div>
+
+        <div class="compare" data-compare>
+          <div class="compare-image compare-after" style="--img:url('./assets/images/after.jpg')"></div>
+          <div class="compare-image compare-before" style="--img:url('./assets/images/before.jpg')"></div>
+          <div class="compare-handle" data-compare-handle>
+            <span>↔</span>
+          </div>
+          <div class="compare-label compare-label-before">До</div>
+          <div class="compare-label compare-label-after">После</div>
+          <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Сравнение до и после">
+        </div>
+      </div>
+    </section>
+
+    <section class="process section-green-dark torn-top" id="process">
+      <div class="process-bg"></div>
+      <div class="container process-grid">
+        <div class="process-heading reveal-up">
+          <span class="section-kicker">КАК МЫ РАБОТАЕМ</span>
+          <h2>Просто.<br>Понятно.<br><em>Надёжно.</em></h2>
+        </div>
+
+        <div class="process-steps">
+          <article class="step reveal-up">
+            <div class="step-number">01</div>
+            <div class="step-icon">⌁</div>
+            <h3>Оставляете заявку</h3>
+            <p>На сайте или по телефону</p>
+          </article>
+          <article class="step reveal-up">
+            <div class="step-number">02</div>
+            <div class="step-icon">⌖</div>
+            <h3>Выезд и оценка</h3>
+            <p>Бесплатно при необходимости</p>
+          </article>
+          <article class="step reveal-up">
+            <div class="step-number">03</div>
+            <div class="step-icon">⌑</div>
+            <h3>Выполнение работ</h3>
+            <p>В согласованные сроки</p>
+          </article>
+          <article class="step reveal-up">
+            <div class="step-number">04</div>
+            <div class="step-icon">✦</div>
+            <h3>Чистый участок</h3>
+            <p>Вы получаете готовый результат</p>
+          </article>
+        </div>
+      </div>
+      <div class="process-branch" aria-hidden="true"></div>
+    </section>
+
+    <section class="reasons section-cream" id="reviews">
+      <div class="container reasons-grid">
+        <div class="reasons-heading reveal-up">
+          <span class="section-kicker dark">ПОЧЕМУ ВЫБИРАЮТ НАС</span>
+          <h2>Больше,<br>чем просто<br><em>спецтехника</em></h2>
+        </div>
+        <div class="reasons-list">
+          <article class="reason reveal-up"><span class="reason-icon">◒</span><h3>Опыт</h3><p>И профессионализм</p></article>
+          <article class="reason reveal-up"><span class="reason-icon">◷</span><h3>Работаем</h3><p>По всей области</p></article>
+          <article class="reason reveal-up"><span class="reason-icon">◇</span><h3>Ответственность</h3><p>И чистый результат</p></article>
+          <article class="reason reveal-up"><span class="reason-icon">◉</span><h3>Любая сложность</h3><p>Участков</p></article>
+          <article class="reason reveal-up"><span class="reason-icon">☆</span><h3>Удобный формат</h3><p>Оплаты</p></article>
+        </div>
+        <div class="scribble-note">«Участок — это<br>часть дома,<br>только под небом»</div>
+      </div>
+    </section>
+
+    <section class="contacts section-green" id="contacts">
+      <div class="contacts-bg"></div>
+      <div class="container contacts-grid">
+        <div class="contacts-copy reveal-up">
+          <span class="section-kicker">ОСТАВЬТЕ ЗАЯВКУ</span>
+          <h2>Узнайте стоимость<br>вашего участка<br><em>за 1 минуту</em></h2>
+          <p>Бесплатно проконсультируем и подскажем оптимальное решение.</p>
+          <a href="tel:+375291234567" class="btn btn-lime magnetic">Рассчитать стоимость <span>→</span></a>
+        </div>
+
+        <form class="contact-form reveal-up" novalidate data-contact-form>
+          <label><span>Ваше имя</span><input name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required minlength="2"></label>
+          <label><span>Телефон</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375 (__) ___-__-__" required></label>
+          <label><span>Выберите услугу</span>
+            <select name="service" required>
+              <option value="">Выберите услугу</option>
+              <option>Расчистка участка</option>
+              <option>Спил деревьев</option>
+              <option>Демонтаж</option>
+              <option>Вывоз мусора</option>
+              <option>Покос травы</option>
+            </select>
+          </label>
+          <button class="btn btn-lime form-submit" type="submit">Отправить заявку <span>→</span></button>
+          <label class="consent"><input type="checkbox" required> <span>Я согласен с обработкой персональных данных</span></label>
+          <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+      <div class="contacts-tag">
+        <span>⌖</span>
+        <b>ВЫЕЗД</b>
+        <small>в Витебск<br>и Витебскую область</small>
+      </div>
+      <div class="leaf-corner leaf-corner-left" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a href="#top" class="brand">
+        <span class="brand-symbol" aria-hidden="true">
+          <span class="leaf leaf-a"></span><span class="leaf leaf-b"></span><span class="leaf leaf-c"></span><span class="trunk"></span>
+        </span>
+        <span class="brand-copy"><strong>ЧИСТЫЙ УЧАСТОК</strong><small>Ваше территория — наша забота</small></span>
+      </a>
+      <nav class="footer-nav">
+        <a href="#services">Услуги</a><a href="#process">Проекты</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="tel:+375291234567">+375 (29) 123-45-67</a>
+        <small>Ежедневно с 8:00 до 20:00</small>
+      </div>
+      <div class="socials"><a href="#" aria-label="Telegram">↗</a><a href="#" aria-label="Instagram">◎</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2024 Чистый участок. Все права защищены.</span><span>Сделано с любовью к чистой природе</span></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.8/dist/lenis.min.js" defer></script>
+  <script src="./script.js" defer></script>
+</body>
+</html>
